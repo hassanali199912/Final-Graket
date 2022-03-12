@@ -1,0 +1,812 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*This is my code*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+    --primary-color: #479cd5;
+    --secondary-color: #211e48;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    box-sizing: border-box;
+    overflow: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header,
+section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/*#region Nav Bar*/
+
+.hammenu {
+    display: none;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    min-height: 50px;
+    z-index: 999;
+}
+
+nav .container {
+    align-content: center;
+}
+
+nav .grid {
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+nav h1 {
+    cursor: pointer;
+}
+
+
+/* ul list*/
+
+nav ul {
+    justify-self: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* buttons*/
+
+nav .flex {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .flex button {
+    padding: 0.5rem;
+    width: 5rem;
+    border: 0.5px solid --secondary-color;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+}
+
+nav .flex button:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-color: var(--primary-color);
+}
+
+nav .flex button:first-child {
+    border-right: none;
+}
+
+nav .flex button:first-child:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-color: var(--primary-color);
+}
+
+
+/*#endregion */
+
+
+/*#region Header */
+
+header {
+    height: 100vh;
+    /* background-color: var(--primary-color); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .container {
+    grid-template-columns: 1fr;
+}
+
+header .text {
+    color: var(--light-color);
+}
+
+header .text h1 {
+    text-align: center;
+    font-size: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+header .text span {
+    color: var(--primary-color);
+}
+
+header .text p {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.8;
+    padding: 1rem;
+}
+
+header .text div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .text div input {
+    padding: 0.8em;
+    width: 50%;
+    opacity: 0.7;
+    border: none;
+    box-shadow: 0 0 5px #fff;
+}
+
+header .text div button {
+    width: 20%;
+    padding: 0.7rem;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--light-color);
+    box-shadow: 0 2px 5px --dark-color;
+    transition: 0.5s ease;
+}
+
+header .text div button:hover {
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+
+/*#endregion */
+
+
+/* #region Services */
+
+.cardes .card {
+    border-radius: 0;
+    border: 1px solid #333;
+    box-shadow: -3px 2px #111226, -10px 10px lightblue;
+    min-height: 200px;
+}
+
+.cardes .card img {
+    width: 50px;
+}
+
+.cardes .card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+.cardes .card p {
+    font-size: 0.8rem;
+}
+
+
+/*#endregion */
+
+
+/*#region Couses */
+
+.courses h1 {
+    text-align: center;
+}
+
+.courses p {
+    text-align: center;
+}
+
+.courses .container {
+    overflow: hidden;
+}
+
+.courses .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.courses .card {
+    min-height: 300px;
+    border: 1px solid var(--dark-color);
+    transition: 0.5s ease;
+}
+
+.courses .card:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.courses .card img {
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
+.courses .card h1 {
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.courses .card p {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.courses .card button {
+    display: block;
+    margin: auto;
+    background-color: var(--dark-color);
+}
+
+
+/*#endregion */
+
+
+/*#region Contact */
+
+.contactform .grid-1 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.contactform .grid-1 button {
+    width: 200px;
+}
+
+.imgform .flex {
+    justify-content: start;
+}
+
+.imgform .flex div:first-child {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.imgform .flex div:first-child i {
+    color: var(--light-color);
+}
+
+
+/*#endregion */
+
+
+/*#region Footer */
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+footer .grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer .flex {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+footer .grid h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+footer .grid p {
+    text-align: left;
+    font-weight: 100;
+}
+
+footer .grid span {
+    color: var(--primary-color);
+}
+
+footer .socail {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .socail i {
+    padding: 1rem 0;
+    padding-right: 1rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    padding: 0 0 0 1rem;
+    text-decoration: none;
+    color: var(--light-color);
+    transition: all 0.5s ease;
+}
+
+footer ul li a:hover {
+    color: var(--primary-color);
+}
+
+footer .copyright {
+    border-top: 2px solid var(--light-color);
+    text-align: center;
+}
+
+footer .copyright p {
+    padding: 1rem;
+}
+
+footer .copyright a {
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+}
+
+
+/*#endregion */
+
+
+/* Next Pages*/
+
+
+/*#region Courses Page */
+
+
+/*#region main */
+
+main {
+    height: 50vh;
+    background-color: var(--primary-color);
+}
+
+main .grid {
+    grid-template-columns: 1fr;
+    color: var(--light-color);
+}
+
+main .grid h1 {
+    text-align: center;
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+main .grid p {
+    text-align: center;
+    align-self: flex-start;
+}
+
+main .grid p:last-child {
+    text-align: left;
+}
+
+main .grid a {
+    color: var(--light-color);
+    font-size: 1.4rem;
+}
+
+
+/*#endregion */
+
+
+/*#region Courses */
+
+.datacourses {
+    min-height: 150vh;
+}
+
+.datacourses .courseslinks button {
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--dark-color);
+    transition: 0.5s ease;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.datacourses .courseslinks .active {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.datacourses .filter input {
+    padding: 0.5rem;
+}
+
+.datacourses .courseslinks button:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.datacourses .courses {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.datacourses .cards img {
+    width: 100%;
+}
+
+.datacourses .cards h2 {
+    color: var(--light-color);
+}
+
+.datacourses .cards h3 {
+    font-size: 1.2rem;
+    color: var(--light-color);
+}
+
+.datacourses .cards button {
+    display: block;
+    margin: 1rem auto;
+}
+
+.datacourses .cards button a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    text-align: center;
+    margin: 2px;
+    display: none;
+    /* Hidden by default */
+}
+
+
+/* The "show" class is added to the filtered elements */
+
+.show {
+    display: block;
+}
+
+
+/* Style the buttons */
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+
+/* Add a light grey background on mouse-over */
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+
+/* Add a dark background to the active button */
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+
+/*#endregion */
+
+
+/*#region Course-info*/
+
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible {
+    color: var(--dark-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #002240;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+/*#endregion */
+
+
+/*#region asside1 section*/
+
+.course-info {
+    min-height: 200vh;
+}
+
+.course-info .grid {
+    grid-template-columns: 1.5fr 0.5fr;
+}
+
+.coursetopic {
+    margin: 1rem 0;
+}
+
+.coursetopic .lessones {
+    border: 1px solid #002240;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.coursetopic .lessones:hover {
+    background-color: var(--light-color);
+}
+
+
+/*#endregion */
+
+
+/*#region asside2 section*/
+
+.course-info .grid {
+    align-items: start;
+}
+
+.asside2 {
+    flex-direction: column;
+}
+
+.asside2 .card {
+    width: 80%;
+    box-shadow: 1px 1px 1px #111226, -1px -1px 1px #111226;
+}
+
+.asside2 .flex {
+    flex-direction: column;
+}
+
+.price-card span {
+    font-weight: 700;
+}
+
+.price-card button {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
+
+.enrolled span {
+    font-weight: 600;
+}
+
+.corseaside-info h1 {
+    align-self: flex-start;
+    font-size: 1.5rem;
+}
+
+.corseaside-info h1::after {
+    content: ' ';
+    background-color: #111226;
+    width: 40%;
+    height: 1px;
+    display: block;
+}
+
+.corseaside-info ul {
+    width: 80%;
+}
+
+.corseaside-info ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding: 0.5rem;
+}
+
+.sharcourse i {
+    font-size: 2rem;
+    padding: 0.4rem;
+}
+
+.sharcourse .fa-facebook-square {
+    color: #3e578f;
+}
+
+.sharcourse .fa-twitter-square {
+    color: #28a9e0;
+}
+
+.sharcourse .fa-linkedin {
+    color: #0b79b8;
+}
+
+
+/*#endregion */
+
+
+/*#endregion */

@@ -1,0 +1,309 @@
+/* extra larg devices (labtop from 1000px to 1200px) */
+
+@media (max-width: 1200px) and (min-width:1000px) {
+    .test {
+        background-color: blueviolet;
+    }
+}
+
+
+/* larg devices (smail labtop from 770 to 992) */
+
+@media (max-width: 992px) and (min-width:769px) {
+    .test {
+        background-color: black;
+    }
+}
+
+
+/* Medium devices (landscape tablets, from 600px to 768px ) */
+
+@media (max-width: 768px) and (min-width:600px) {
+    /*#region Header */
+    .container {
+        width: 90%;
+    }
+    .hammenu {
+        display: block;
+        justify-self: end;
+    }
+    .hammenu button {
+        border-radius: 8px;
+        box-shadow: 0 0 3px #222;
+    }
+    .hammenu button i {
+        font-size: 1.5rem;
+    }
+    #mob-menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        background-color: #f4f4f4;
+        transform: translate(50%, -5%);
+        height: 100vh;
+        transition: 0.5s ease;
+    }
+    #mob-menu li {
+        display: flex;
+        flex-direction: column;
+    }
+    #mob-menu li a {
+        color: #222;
+    }
+    nav ul,
+    nav .button-div {
+        display: none;
+    }
+    nav .grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    /* Header */
+    header .text h1 {
+        font-size: 1.5rem;
+    }
+    header .text p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    /*#endregion */
+    /* #region Services */
+    .text h1 {
+        font-size: 1.5rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .cardes .card {
+        min-height: 50px;
+    }
+    .cardes .card img {
+        width: 30px;
+    }
+    .cardes .card h3 {
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.5rem 0;
+    }
+    .cardes .card p {
+        font-size: 0.5rem;
+    }
+    /*#endregion */
+    /* #region Services */
+    .courses .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*#endregion */
+    /*#region Contact */
+    .contactform h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .contactform .grid .p-1 {
+        padding: 0.4rem;
+    }
+    /*#endregion */
+    /*#region footer */
+    footer .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    footer .footertext {
+        text-align: left;
+    }
+    /*#endregion */
+    /*#region Courses Page */
+    main {
+        height: 40vh;
+        background-color: var(--primary-color);
+    }
+    main .grid h1 {
+        font-size: 2rem;
+        padding: 0;
+        align-self: flex-end;
+    }
+    main .grid p {
+        font-size: 1rem;
+        padding: 0;
+        align-self: flex-start;
+    }
+    main .grid a {
+        font-size: 1rem;
+    }
+    .datacourses .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*#endregion */
+    /*#region courses-info */
+    .course-info .grid {
+        grid-template-columns: 1.5fr 0.5fr;
+    }
+    .course-info .asside2 {
+        width: 80%;
+    }
+    .course-info .asside2 .price-card img {
+        width: 100%;
+    }
+    .course-info .asside2 .price-card button {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+    .course-info .asside2 .enrolled h2 {
+        font-size: 0.8rem;
+    }
+    .course-info .asside2 .corseaside-info h1 {
+        font-size: 0.7rem;
+    }
+    .course-info .asside2 .corseaside-info ul li {
+        font-size: 0.6rem;
+    }
+    .course-info .asside2 .sharcourse h1 {
+        font-size: 0.8rem;
+    }
+    .course-info .asside2 .sharcourse i {
+        font-size: 1rem;
+    }
+    /*#endregion */
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px) */
+
+@media only screen and (max-width: 599px) {
+    /*#region Header */
+    .test {
+        background-color: cadetblue;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .hammenu {
+        display: block;
+        justify-self: end;
+    }
+    .hammenu button {
+        border-radius: 8px;
+    }
+    .hammenu button i {
+        font-size: 1.5rem;
+    }
+    #mob-menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        background-color: #f4f4f4;
+        transform: translate(50%, -10%);
+        height: 100vh;
+        transition: 0.5s ease;
+    }
+    #mob-menu li {
+        display: flex;
+        flex-direction: column;
+    }
+    #mob-menu li a {
+        color: #222;
+    }
+    nav ul,
+    nav .button-div {
+        display: none;
+    }
+    nav .grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    header .text h1 {
+        font-size: 2rem;
+    }
+    header .text p {
+        text-align: center;
+        font-size: 1rem;
+    }
+    /*#endregion */
+    /* #region Services */
+    .services .grid {
+        grid-template-columns: 1fr;
+    }
+    .text h1,
+    p {
+        text-align: center;
+    }
+    .text button {
+        display: block;
+        margin: auto;
+    }
+    /*#endregion */
+    /* #region Services */
+    .courses .grid {
+        grid-template-columns: 1fr;
+    }
+    .courses h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .courses p {
+        margin: 0 0 2rem 0;
+    }
+    /*#endregion */
+    /*#region Contact */
+    .contact .grid {
+        grid-template-columns: 1fr;
+    }
+    .contactform h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .contactform .grid .p-1 {
+        padding: 0.4rem;
+    }
+    /*#endregion */
+    /*#region Footer */
+    footer .grid {
+        grid-template-columns: 1fr;
+    }
+    footer .footertext {
+        text-align: left;
+    }
+    /*#endregion */
+    /*#region Courses Page */
+    /*#region main */
+    main {
+        height: 40vh;
+        background-color: var(--primary-color);
+    }
+    main .grid h1 {
+        font-size: 2rem;
+        align-self: flex-end;
+    }
+    main .grid p {
+        font-size: 1.5rem;
+        align-self: flex-start;
+    }
+    main .grid a {
+        font-size: 1rem;
+    }
+    /*#endregion */
+    /*#region courses */
+    .datacourses .filter {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .datacourses .filter input {
+        margin: 1rem 0;
+        width: 100%;
+    }
+    .datacourses .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /*#endregion */
+    /*#endregion */
+    /*#region courses-info */
+    .course-info .grid {
+        grid-template-columns: 1fr;
+    }
+    .course-info .asside1 {
+        order: 2;
+    }
+    .course-info .asside1 p {
+        text-align: left;
+    }
+    /*#endregion */
+}
