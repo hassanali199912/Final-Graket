@@ -166,6 +166,115 @@ section {
 
 /*#region Nav Bar*/
 
+.nav a {
+    text-decoration: none;
+}
+
+.nav {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light-color);
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav ul a {
+    color: var(--dark-color);
+}
+
+.nav ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.nav ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#login,
+#signup {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+#login,
+#signup {
+    border: 1px solid var(--secondary-color);
+}
+
+#signup a {
+    color: var(--dark-color);
+}
+
+#login a {
+    color: var(--primary-color);
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.5s ease;
+    background-color: rgb(236, 236, 236);
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
 .hammenu {
     display: none;
     overflow: hidden;
@@ -803,6 +912,62 @@ main .grid a {
 
 .sharcourse .fa-linkedin {
     color: #0b79b8;
+}
+
+
+/*#endregion */
+
+
+/*#endregion */
+
+
+/*#region Videso Page */
+
+
+/*#region courselist Page */
+
+.courselist,
+.manu,
+.Cont {
+    max-height: 70vh;
+}
+
+.courselist .grid {
+    grid-template-columns: 0.5fr 1fr;
+}
+
+.courselist .manu {
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.courselist .Cont {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.courselist .Cont iframe {
+    background-color: #002240;
+    width: 70%;
+    height: 400px;
+}
+
+.courselist .Cont .buttons {
+    width: 70%;
+    justify-content: center;
+}
+
+.courselist .Cont .buttons button {
+    color: #111226;
+    padding: 1rem 2rem;
+    margin: 1rem 3rem;
+    border: 1px solid;
+}
+
+.courselist .Cont .buttons button:last-child {
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 
 

@@ -19,9 +19,15 @@
 /* Medium devices (landscape tablets, from 600px to 768px ) */
 
 @media (max-width: 768px) and (min-width:600px) {
+    .nav nav {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+    }
     /*#region Header */
     .container {
-        width: 90%;
+        width: 95%;
     }
     .hammenu {
         display: block;
@@ -163,12 +169,27 @@
         font-size: 1rem;
     }
     /*#endregion */
+    /*#region courselist Page */
+    .courselist .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .courselist .Cont iframe {
+        width: 90%;
+    }
+    /*#endregion */
+    /*#endregion */
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px) */
 
 @media only screen and (max-width: 599px) {
+    .nav nav {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+    }
     /*#region Header */
     .test {
         background-color: cadetblue;
@@ -305,5 +326,22 @@
     .course-info .asside1 p {
         text-align: left;
     }
+    /*#endregion */
+    /*#region courselist Page */
+    .courselist .grid {
+        grid-template-columns: 1fr;
+    }
+    .courselist {
+        min-height: 200vh !important;
+    }
+    .courselist .Cont iframe {
+        width: 90%;
+        margin: auto;
+    }
+    .courselist .Cont h1 {
+        width: 90%;
+        margin: auto;
+    }
+    /*#endregion */
     /*#endregion */
 }

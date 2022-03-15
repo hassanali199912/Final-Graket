@@ -15,34 +15,38 @@
 </head>
 
 <body>
-    <nav class="bg-light ">
-        <div class="container grid ">
-            <h1 class="alert md secondary"><span class="special primary">G</span>raket</h1>
-            <div class="hammenu">
-                <button class="btn-light" id="open"><i class="bi bi-list"></i></button>
-                <!-- 
-                <ul id="mob-menu">
-                    <li><a href="#" id="close">X</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Featuers</a></li>
-                    <li><a href="#">Contactus</a></li>
-                </ul> -->
-            </div>
+
+    <nav class="nav">
+
+        <h1 class="alert md secondary"><span class="special primary">G</span>raket</h1>
+        <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="coures.html">Courses</a></li>
-                <li><a href="#">Featuers</a></li>
-                <li><a href="#">Contactus</a></li>
+                <div>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/about">About</a></li>
+                </div>
+                <div>
+                    <li id="login"><a href="/login">Login</a></li>
+                    <li id="signup"><a href="/signup">Signup</a></li>
+                </div>
             </ul>
-
-            <div class="button-div flex ">
-                <button class="btn-light">Sign up</button>
-                <button class="btn-secondary">log in</button>
-            </div>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about">About</a></li>
+                <li id="login"><a href="/login">Login</a></li>
+                <li id="signup"><a href="/signup">Signup</a></li>
+            </ul>
         </div>
-
     </nav>
+
     <header>
         <div class="container grid ">
 
@@ -227,6 +231,7 @@
     </footer>
 
     <script src="js/script.js "></script>
+    <script src="js/nav.js "></script>
 </body>
 
 </html>
